@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>PetFitPro</title>
+</head>
+
+<body class="background">
+  <nav class="navbar navbar-dark fixed-top">
+    <button class="btn bmd-btn-icon" type="button">
+      <i class="material-icons">home</i>
+    </button>
+    <a id="barName" class="navbar-brand" href="#">Loading...</a>
+    <button id="signOutButtonPet" type="button" class="btn text-light">Sign Out</button>
+  </nav>
+
+  <div id="petHomepage" class="container page-container">
+    <div class="d-flex justify-content-center">
+      <div class="paw-tower-right">Virtual Pet Source:
+        <a href="https://gifypet.neocities.org/" target="_blank">
+          <img src="https://gifypet.neocities.org/images/badge.gif"></a>
+      </div>
+    </div>
+
+    <div class="icon-text-wrapper">
+      <i class="material-icons">pets</i>
+      <h4 class="roboto">Play with a virtual version of your pet!</h4>
+      <i class="material-icons">pets</i>
+    </div>
+
+    <div id="friendContainer" class="d-flex justify-content-center">
+      <div id="bestFriend"></div>
+    </div>
+  </div>
+
+  <div class="restrict-cards">
+    <div id="rightSpacing" class="d-flex justify-content-between align-items-center">
+      <h3 class="left-center roboto">Most Recent Activity:</h3>
+      <div>View All Activity to add one! -></div>
+      <div id="loginGoBack">
+        <button id="viewActivityButton" type="button" class="btn small-custom-btn">View All Activity</button>
+      </div>
+    </div>
+
+    <div id="activityListContainer">
+
+    </div>
+  </div>
+
+  </div>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

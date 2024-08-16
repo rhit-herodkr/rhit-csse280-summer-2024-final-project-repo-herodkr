@@ -1,0 +1,50 @@
+<!doctype html> 
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>PetFitPro</title>
+</head>
+
+<body>
+  <div id="loginPage" class="container page-container restrict-container">
+    <img src="/pawTower.png" alt="Paw Tower" class="paw-tower paw-tower-left">
+    <img src="/upsidedownPawTower.png" alt="Paw Tower" class="paw-tower paw-tower-right">
+
+    <h2>Login to continue!</h2>
+
+
+    <div class="form-group">
+      <label for="inputEmail" class="bmd-label-floating">Email</label>
+      <input type="email" class="form-control" id="inputEmail">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="bmd-label-floating">Password</label>
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+    <br>
+    <button id="logInButton" type="button" class="btn custom-btn">Log Into Existing Account</button>
+    <br>
+    <br>
+    <div id="loginGoBack">
+      <button type="button" class="btn small-custom-btn">Go Back</button>
+    </div>
+  </div>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

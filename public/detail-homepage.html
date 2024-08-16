@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>PetFitPro</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top">
+        <button id="detailHomeButton" class="btn bmd-btn-icon" type="button">
+            <i class="material-icons">home</i>
+        </button>
+        <a id="barName" class="navbar-brand" href="#">Loading...</a>
+        <button id="signOutButtonDetail" type="button" class="btn text-light">Sign Out</button>
+    </nav>
+
+    <div id="detailHomepage" class="container page-container">
+        <div class="d-flex justify-content-end">
+            <div class="dropdown pull-xs-right">
+                <button class="btn dropdown-toggle " type="button" id="lr1" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Edit or Delete this Activity!
+                </button>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="lr1">
+                    <button class="dropdown-item" type="button" data-toggle="modal" data-target="#editActivityDialog">
+                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;Edit</button>
+                    <button class="dropdown-item" type="button" data-toggle="modal" data-target="#deleteActivityDialog">
+                        <i class="material-icons">delete</i>&nbsp;&nbsp;&nbsp;Delete</button>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <div class="d-flex justify-content-center">
+                <div id="activityText">
+                    <h3 class="decorative-line">INSET ACTIVITY HERE</h3>
+                </div>
+            </div>
+            <div id="lastTouchedText" class="d-flex justify-content-center">
+                <div>
+                    <h3 class="">Activity Performed on INSERT DATE HERE</h3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="detailGoBack">
+            <button type="button" class="btn small-custom-btn">Go Back</button>
+        </div>
+
+        <div class="modal fade" id="editActivityDialog" tabindex="-1" role="dialog"
+            aria-labelledby="Edit activity dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Edit this Activity:</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group bmd-form-group">
+                            <label for="inputActivity" class="bmd-label-floating">Describe the activity!</label>
+                            <input type="text" class="form-control" id="inputActivity">
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+                        <button id="submitEditActivity" type="button" class="btn btn-primary"
+                            data-dismiss="modal">UPDATE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deleteActivityDialog" tabindex="-1" role="dialog"
+            aria-labelledby="Delete activity dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Delete this Activity:</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        Are you sure you want to delete this Activity?
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+                        <button id="submitDeleteActivity" type="button" class="btn btn-primary"
+                            data-dismiss="modal">DELETE</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>$("body").bootstrapMaterialDesign();</script>
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
